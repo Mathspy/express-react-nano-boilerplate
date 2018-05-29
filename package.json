@@ -1,0 +1,29 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "Extremely minimal boilerplate for a website using React and Express",
+  "scripts": {
+    "dev:client": "npx -q --no-install webpack-dev-server --port 25631 --open",
+    "dev:server": "node src/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathspy/express-react-nano-boilerplate.git"
+  },
+  "author": "Mathspy",
+  "homepage": "https://github.com/Mathspy/express-react-nano-boilerplate.git",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
