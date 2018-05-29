@@ -1,10 +1,3 @@
-const express = require("express")
-
-const app = express()
-
-const api = require("./routers/api.js")
-
-//Serving the files in the build folder
-app.use("/api", api)
+const app = require("./app")
 
 app.listen(25632, () => console.log("We are online!"))

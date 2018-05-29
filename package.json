@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Extremely minimal boilerplate for a website using React and Express",
   "scripts": {
+    "test": "npx jest",
     "dev:client": "npx -q --no-install webpack-dev-server --port 25631 --open",
     "dev:server": "node src/server/index.js"
   },
@@ -19,9 +20,16 @@
     "@babel/core": "^7.0.0-beta.49",
     "@babel/preset-env": "^7.0.0-beta.49",
     "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^8.0.0-beta.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.0.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-test-renderer": "^16.4.0",
+    "supertest": "^3.1.0",
     "webpack": "^4.10.1",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
