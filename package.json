@@ -6,7 +6,9 @@
     "test": "npx jest",
     "test:watch": "npx jest --watch",
     "dev:client": "npx -q --no-install webpack-dev-server --port 25631 --open",
-    "dev:server": "node src/server/index.js"
+    "dev:server": "node src/server/index.js",
+    "lint": "npx eslint --ignore-path .gitignore .",
+    "lint:fix": "npx eslint --fix --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
