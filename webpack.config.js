@@ -1,10 +1,10 @@
 module.exports = {
 	mode: "development",
 	devtool: "source-map",
-	entry: __dirname + "/src/client/index.js",
+	entry: `${__dirname}/src/client/index.js`,
 	output: {
-		path: __dirname + "/build/",
-		filename: "bundle.js"
+		path: `${__dirname}/build/`,
+		filename: "bundle.js",
 	},
 	module: {
 		rules: [
@@ -12,16 +12,16 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
-					loader: "babel-loader"
-				}
-			}
-		]
+					loader: "babel-loader",
+				},
+			},
+		],
 	},
 	devServer: {
 		proxy: { // proxy URLs to backend development server
-			"/api": "http://localhost:25632"
+			"/api": "http://localhost:25632",
 		},
-		contentBase: __dirname + "/build/",
-		inline: true
-	}
+		contentBase: `${__dirname}/build/`,
+		inline: true,
+	},
 };
