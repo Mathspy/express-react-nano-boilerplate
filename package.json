@@ -4,6 +4,7 @@
   "description": "Extremely minimal boilerplate for a website using React and Express",
   "scripts": {
     "test": "npx jest",
+    "test:watch": "npx jest --watch",
     "dev:client": "npx -q --no-install webpack-dev-server --port 25631 --open",
     "dev:server": "node src/server/index.js"
   },
